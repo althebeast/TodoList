@@ -13,6 +13,7 @@
 		84CE617A2C90C62200BC8B39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CE61792C90C62200BC8B39 /* Preview Assets.xcassets */; };
 		84CE61852C90C7F800BC8B39 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE61842C90C7F800BC8B39 /* ListRowView.swift */; };
 		84CE61872C90CC0700BC8B39 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE61862C90CC0700BC8B39 /* AddView.swift */; };
+		84CE61892C90D23A00BC8B39 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE61882C90D23A00BC8B39 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		84CE61792C90C62200BC8B39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84CE61842C90C7F800BC8B39 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		84CE61862C90CC0700BC8B39 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		84CE61882C90D23A00BC8B39 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				84CE61802C90C64600BC8B39 /* App */,
-				84CE61812C90C65700BC8B39 /* Model */,
+				84CE61812C90C65700BC8B39 /* Models */,
 				84CE61822C90C66700BC8B39 /* View */,
 				84CE61832C90C67100BC8B39 /* ViewModel */,
 				84CE61752C90C62200BC8B39 /* Assets.xcassets */,
@@ -83,11 +85,12 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		84CE61812C90C65700BC8B39 /* Model */ = {
+		84CE61812C90C65700BC8B39 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				84CE61882C90D23A00BC8B39 /* ItemModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		84CE61822C90C66700BC8B39 /* View */ = {
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CE61892C90D23A00BC8B39 /* ItemModel.swift in Sources */,
 				84CE61872C90CC0700BC8B39 /* AddView.swift in Sources */,
 				84CE61742C90C62100BC8B39 /* ListView.swift in Sources */,
 				84CE61722C90C62100BC8B39 /* TodoListApp.swift in Sources */,
