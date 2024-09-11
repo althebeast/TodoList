@@ -17,6 +17,7 @@ struct TodoListApp: App {
             NavigationStack {
                 ListView()
             }
+            .navigationSplitViewStyle(.automatic)
             .environmentObject(listViewModel)
         }
     }

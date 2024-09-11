@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842EE1952C92015E0003DBBD /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842EE1942C92015E0003DBBD /* NoItemView.swift */; };
 		84CE61722C90C62100BC8B39 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE61712C90C62100BC8B39 /* TodoListApp.swift */; };
 		84CE61742C90C62100BC8B39 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE61732C90C62100BC8B39 /* ListView.swift */; };
 		84CE61762C90C62200BC8B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CE61752C90C62200BC8B39 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842EE1942C92015E0003DBBD /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
 		84CE616E2C90C62100BC8B39 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CE61712C90C62100BC8B39 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		84CE61732C90C62100BC8B39 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				84CE61732C90C62100BC8B39 /* ListView.swift */,
 				84CE61842C90C7F800BC8B39 /* ListRowView.swift */,
 				84CE61862C90CC0700BC8B39 /* AddView.swift */,
+				842EE1942C92015E0003DBBD /* NoItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CE61892C90D23A00BC8B39 /* ItemModel.swift in Sources */,
+				842EE1952C92015E0003DBBD /* NoItemView.swift in Sources */,
 				84CE61872C90CC0700BC8B39 /* AddView.swift in Sources */,
 				84CE618B2C90D87500BC8B39 /* ListViewModel.swift in Sources */,
 				84CE61742C90C62100BC8B39 /* ListView.swift in Sources */,
