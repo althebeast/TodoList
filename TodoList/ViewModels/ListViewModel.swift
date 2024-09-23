@@ -6,16 +6,18 @@
 //
 
 import Foundation
+import Observation
 
-class ListViewModel: ObservableObject {
+@Observable
+class ListViewModel {
     
-    @Published var search = ""
-    @Published var items: [ItemModel] = [] {
+    var search = ""
+    var items: [ItemModel] = [] {
         didSet { //what didSet does is that whenever we change something in this items array it calls didSet and it calls saveItems which is are userDefaults
             saveItems()
         }
     }
-    @Published var filteredItems: [ItemModel] = []
+    var filteredItems: [ItemModel] = []
     
     let itemsKey = "items_key"
     

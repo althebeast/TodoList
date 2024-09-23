@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct TodoListApp: App {
     
-    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    @State var listViewModel: ListViewModel = ListViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -18,7 +18,7 @@ struct TodoListApp: App {
                 ListView()
             }
             .navigationSplitViewStyle(.automatic)
-            .environmentObject(listViewModel)
+            .environment(listViewModel)
         }
     }
 }

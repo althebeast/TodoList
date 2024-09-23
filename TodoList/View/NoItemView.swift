@@ -67,5 +67,5 @@ struct NoItemView: View {
         NoItemView()
             .navigationTitle("Title")
     }
-    .environmentObject(ListViewModel())
+    .environment(ListViewModel())
 }

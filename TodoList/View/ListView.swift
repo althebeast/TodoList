@@ -9,9 +9,12 @@ import SwiftUI
 
 struct ListView: View {
     
-    @EnvironmentObject var listViewModel: ListViewModel
+    @Environment(ListViewModel.self) var listViewModel
     
     var body: some View {
+        
+        @Bindable var listViewModel = listViewModel
+        
         ZStack {
             if listViewModel.items.isEmpty {
                 NoItemView()
@@ -60,5 +63,5 @@ struct ListView: View {
     NavigationStack {
         ListView()
     }
-    .environmentObject(ListViewModel())
+    .environment(ListViewModel())
 }
