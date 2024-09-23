@@ -18,7 +18,7 @@ struct ListView: View {
                     .transition(AnyTransition.opacity.animation(.easeIn))
             } else {
                 List {
-                    ForEach(listViewModel.items) { item in
+                    ForEach(listViewModel.filteredItems) { item in
                         ListRowView(item: item)
                             .onTapGesture {
                                 withAnimation(.linear) {
@@ -30,8 +30,15 @@ struct ListView: View {
                     .onMove(perform: listViewModel.moveItem)
                     }
                     .listStyle(.plain)
+                    .searchable(text: $listViewModel.search)
+                    .onChange(of: listViewModel.search) {
+                        listViewModel.searchItems()
+                    }
             }
         }
+        .onAppear(perform: {
+            listViewModel.filteredItems = listViewModel.items
+        })
             .navigationTitle("Todo List 📝")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
